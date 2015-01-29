@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Divisas" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTK-hh-5ng">
+                                <rect key="frame" x="115" y="28" width="91" height="26"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.0077515478000000004" green="0.87177309780000001" blue="0.0040620592199999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tipo de Cambio:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJY-ev-sa5">
+                                <rect key="frame" x="40" y="99" width="128" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pesos:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGm-5z-IdG">
+                                <rect key="frame" x="40" y="160" width="53" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Dólares:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqr-Cz-0tO">
+                                <rect key="frame" x="40" y="210" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TSd-1F-8rz">
+                                <rect key="frame" x="79" y="268" width="163" height="32"/>
+                                <state key="normal" image="botonCalcular.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bCalcular:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Bp-xI-yfE"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Cey-vE-BMs">
+                                <rect key="frame" x="184" y="201" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="AQw-6j-vo4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dinero.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="lg5-fI-XYX">
+                                <rect key="frame" x="40" y="346" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="0mm-T9-XWI"/>
+                                    <constraint firstAttribute="height" constant="128" id="Lc1-Xj-ce5"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9ZP-uY-bhr">
+                                <rect key="frame" x="184" y="90" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="BER-Vq-JaZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S2b-R2-LB9">
+                                <rect key="frame" x="184" y="151" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="vAh-v7-52X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Rqr-Cz-0tO" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="586-1C-C8h"/>
+                            <constraint firstItem="MJY-ev-sa5" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="ALx-34-7VU"/>
+                            <constraint firstItem="S2b-R2-LB9" firstAttribute="leading" secondItem="ZGm-5z-IdG" secondAttribute="trailing" constant="91" id="BKN-eJ-iQQ"/>
+                            <constraint firstItem="Rqr-Cz-0tO" firstAttribute="top" secondItem="ZGm-5z-IdG" secondAttribute="bottom" constant="29" id="CHj-we-s1b"/>
+                            <constraint firstItem="gTK-hh-5ng" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="FB0-lg-4jq"/>
+                            <constraint firstItem="Cey-vE-BMs" firstAttribute="top" secondItem="S2b-R2-LB9" secondAttribute="bottom" constant="20" id="Qfg-nT-q0d"/>
+                            <constraint firstItem="ZGm-5z-IdG" firstAttribute="top" secondItem="MJY-ev-sa5" secondAttribute="bottom" constant="40" id="TWl-rG-h8s"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="lg5-fI-XYX" secondAttribute="bottom" constant="94" id="ao0-UB-qY1"/>
+                            <constraint firstItem="gTK-hh-5ng" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="99" id="dry-b6-UwW"/>
+                            <constraint firstItem="S2b-R2-LB9" firstAttribute="top" secondItem="9ZP-uY-bhr" secondAttribute="bottom" constant="31" id="iKy-Ef-m80"/>
+                            <constraint firstItem="9ZP-uY-bhr" firstAttribute="leading" secondItem="MJY-ev-sa5" secondAttribute="trailing" constant="16" id="lTs-iu-fEn"/>
+                            <constraint firstItem="Cey-vE-BMs" firstAttribute="leading" secondItem="Rqr-Cz-0tO" secondAttribute="trailing" constant="81" id="lcJ-9J-j9C"/>
+                            <constraint firstItem="MJY-ev-sa5" firstAttribute="top" secondItem="gTK-hh-5ng" secondAttribute="bottom" constant="45" id="n4a-SF-Mfk"/>
+                            <constraint firstItem="9ZP-uY-bhr" firstAttribute="top" secondItem="gTK-hh-5ng" secondAttribute="bottom" constant="36" id="tXR-sK-SXW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lg5-fI-XYX" secondAttribute="trailing" constant="24" id="uSF-nl-LMn"/>
+                            <constraint firstItem="ZGm-5z-IdG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="vg9-M4-Kl2"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tfDolares" destination="Cey-vE-BMs" id="JDB-3p-vxu"/>
+                        <outlet property="tfPesos" destination="S2b-R2-LB9" id="cyL-mW-ZV2"/>
+                        <outlet property="tfTipoCambio" destination="9ZP-uY-bhr" id="Z5S-E6-W1M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="405"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="botonCalcular.jpg" width="100" height="32"/>
+        <image name="dinero.jpg" width="400" height="327"/>
+    </resources>
+</document>
