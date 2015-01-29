@@ -14,6 +14,11 @@
 		FB23A2641A7AEFAE0032D1E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB23A2631A7AEFAE0032D1E9 /* Images.xcassets */; };
 		FB23A2671A7AEFAE0032D1E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB23A2651A7AEFAE0032D1E9 /* LaunchScreen.xib */; };
 		FB23A2731A7AEFAE0032D1E9 /* storyboardsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23A2721A7AEFAE0032D1E9 /* storyboardsTests.m */; };
+		FB23A27F1A7AF53C0032D1E9 /* ViewControllerInicial.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23A27E1A7AF53C0032D1E9 /* ViewControllerInicial.m */; };
+		FB23A2831A7AF5D80032D1E9 /* mickey.png in Resources */ = {isa = PBXBuildFile; fileRef = FB23A2821A7AF5D80032D1E9 /* mickey.png */; };
+		FB23A2851A7AF5F20032D1E9 /* mickey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB23A2841A7AF5F20032D1E9 /* mickey.jpg */; };
+		FB23A2881A7AF61A0032D1E9 /* ViewControllerInformacion.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23A2871A7AF61A0032D1E9 /* ViewControllerInformacion.m */; };
+		FB23A28B1A7AF65E0032D1E9 /* ViewControllerEditar.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23A28A1A7AF65E0032D1E9 /* ViewControllerEditar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +45,14 @@
 		FB23A26C1A7AEFAE0032D1E9 /* storyboardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = storyboardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB23A2711A7AEFAE0032D1E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB23A2721A7AEFAE0032D1E9 /* storyboardsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = storyboardsTests.m; sourceTree = "<group>"; };
+		FB23A27D1A7AF53C0032D1E9 /* ViewControllerInicial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInicial.h; sourceTree = "<group>"; };
+		FB23A27E1A7AF53C0032D1E9 /* ViewControllerInicial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInicial.m; sourceTree = "<group>"; };
+		FB23A2821A7AF5D80032D1E9 /* mickey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mickey.png; sourceTree = "<group>"; };
+		FB23A2841A7AF5F20032D1E9 /* mickey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mickey.jpg; sourceTree = "<group>"; };
+		FB23A2861A7AF61A0032D1E9 /* ViewControllerInformacion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInformacion.h; sourceTree = "<group>"; };
+		FB23A2871A7AF61A0032D1E9 /* ViewControllerInformacion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInformacion.m; sourceTree = "<group>"; };
+		FB23A2891A7AF65E0032D1E9 /* ViewControllerEditar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerEditar.h; sourceTree = "<group>"; };
+		FB23A28A1A7AF65E0032D1E9 /* ViewControllerEditar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerEditar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,10 +95,18 @@
 			isa = PBXGroup;
 			children = (
 				FB23A25A1A7AEFAE0032D1E9 /* AppDelegate.h */,
+				FB23A2821A7AF5D80032D1E9 /* mickey.png */,
 				FB23A25B1A7AEFAE0032D1E9 /* AppDelegate.m */,
+				FB23A2841A7AF5F20032D1E9 /* mickey.jpg */,
 				FB23A25D1A7AEFAE0032D1E9 /* ViewController.h */,
+				FB23A2861A7AF61A0032D1E9 /* ViewControllerInformacion.h */,
+				FB23A2871A7AF61A0032D1E9 /* ViewControllerInformacion.m */,
 				FB23A25E1A7AEFAE0032D1E9 /* ViewController.m */,
 				FB23A2601A7AEFAE0032D1E9 /* Main.storyboard */,
+				FB23A2891A7AF65E0032D1E9 /* ViewControllerEditar.h */,
+				FB23A28A1A7AF65E0032D1E9 /* ViewControllerEditar.m */,
+				FB23A27D1A7AF53C0032D1E9 /* ViewControllerInicial.h */,
+				FB23A27E1A7AF53C0032D1E9 /* ViewControllerInicial.m */,
 				FB23A2631A7AEFAE0032D1E9 /* Images.xcassets */,
 				FB23A2651A7AEFAE0032D1E9 /* LaunchScreen.xib */,
 				FB23A2561A7AEFAE0032D1E9 /* Supporting Files */,
@@ -200,8 +221,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB23A2621A7AEFAE0032D1E9 /* Main.storyboard in Resources */,
+				FB23A2851A7AF5F20032D1E9 /* mickey.jpg in Resources */,
 				FB23A2671A7AEFAE0032D1E9 /* LaunchScreen.xib in Resources */,
 				FB23A2641A7AEFAE0032D1E9 /* Images.xcassets in Resources */,
+				FB23A2831A7AF5D80032D1E9 /* mickey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +242,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB23A2881A7AF61A0032D1E9 /* ViewControllerInformacion.m in Sources */,
 				FB23A25F1A7AEFAE0032D1E9 /* ViewController.m in Sources */,
 				FB23A25C1A7AEFAE0032D1E9 /* AppDelegate.m in Sources */,
+				FB23A28B1A7AF65E0032D1E9 /* ViewControllerEditar.m in Sources */,
+				FB23A27F1A7AF53C0032D1E9 /* ViewControllerInicial.m in Sources */,
 				FB23A2591A7AEFAE0032D1E9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -346,6 +372,7 @@
 				INFOPLIST_FILE = storyboards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -356,6 +383,7 @@
 				INFOPLIST_FILE = storyboards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
