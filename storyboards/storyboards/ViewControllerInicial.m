@@ -7,6 +7,8 @@
 //
 
 #import "ViewControllerInicial.h"
+#import "ViewControllerInformacion.h"
+#import "ViewControllerEditar.h"
 
 @interface ViewControllerInicial ()
 
@@ -34,14 +36,28 @@
     // falta completar
 }
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
+    if ([[segue identifier] isEqualToString:@"info"]){
+        ViewControllerInformacion *viewInfo = [segue destinationViewController];
+        
+        viewInfo.foto = self.imgFoto.image;
+        viewInfo.ancho = self.imgFoto.image.size.width;
+        viewInfo.altura = self.imgFoto.image.size.height;
+    }else {
+        ViewControllerEditar *viewEditar = [segue destinationViewController];
+        
+        viewEditar.nombre = self.tfNombre.text;
+        viewEditar.email = self.tfEmail.text;
+        
+    }
     // Pass the selected object to the new view controller.
+    
 }
-*/
+
 
 @end
