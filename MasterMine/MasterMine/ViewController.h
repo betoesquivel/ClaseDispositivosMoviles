@@ -22,6 +22,8 @@
 @property (weak, nonatomic) IBOutlet UIButton *btnTest4;
 
 // Game board
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *btns;
+
 - (IBAction)changeSquare1:(UIButton *)sender;
 - (IBAction)changeSquare2:(UIButton *)sender;
 - (IBAction)changeSquare3:(UIButton *)sender;

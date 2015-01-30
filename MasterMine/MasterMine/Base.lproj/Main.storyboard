@@ -152,6 +152,10 @@
                         <outlet property="btnTest4" destination="YdQ-jY-tM6" id="hD0-Pl-Ejj"/>
                         <outlet property="lblTestBoard" destination="he4-yr-Xow" id="f4u-UI-fwD"/>
                         <outlet property="segment" destination="mcY-Y3-0aB" id="esy-V7-MZS"/>
+                        <outletCollection property="btns" destination="D4A-Er-t7u" id="HRX-XS-hTb"/>
+                        <outletCollection property="btns" destination="e5w-JL-vVv" id="cyO-xF-0Qa"/>
+                        <outletCollection property="btns" destination="FlM-LI-FwX" id="k7I-hy-hKs"/>
+                        <outletCollection property="btns" destination="LXV-jK-SyB" id="ebI-61-4z5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

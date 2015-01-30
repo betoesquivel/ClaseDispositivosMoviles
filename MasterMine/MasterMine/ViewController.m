@@ -32,6 +32,9 @@
         hue += increment;
         [self.colors addObject:color];
     }
+   // UIColor *color = [UIColor grayColor];
+    //[self.colors addObject: [UIColor grayColor]];
+    
     
 }
 
@@ -41,6 +44,12 @@
     
     // Make sure 'play' is selected in the segmentedView
     self.segment.selectedSegmentIndex = 0;
+    
+    // color squares
+    int position = 0;
+    for (UIButton *btn in self.btns) {
+        btn.backgroundColor = [UIColor grayColor];
+    }
     
     // Hide testing board
     self.lblTestBoard.hidden = YES;
