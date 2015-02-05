@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>74248203-6AB0-4717-9EDD-902676CFE294</string>
+	<key>IDESourceControlProjectName</key>
+	<string>EjercicioCuerposGeometricos</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>8C145CB2872EB76E3001DBFCE4C0D3E145E260DC</key>
+		<string>https://github.com/betoesquivel/ClaseDispositivosMoviles.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>EjercicioCuerposGeometricos/EjercicioCuerposGeometricos.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>8C145CB2872EB76E3001DBFCE4C0D3E145E260DC</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/betoesquivel/ClaseDispositivosMoviles.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>8C145CB2872EB76E3001DBFCE4C0D3E145E260DC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>8C145CB2872EB76E3001DBFCE4C0D3E145E260DC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>A01139626</string>
+		</dict>
+	</array>
+</dict>
+</plist>

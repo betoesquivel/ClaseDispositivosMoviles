@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FBDCB6E21A8430D300D7B982 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDCB6E11A8430D300D7B982 /* main.m */; };
+		FBDCB6E51A8430D300D7B982 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDCB6E41A8430D300D7B982 /* AppDelegate.m */; };
+		FBDCB6EB1A8430D300D7B982 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBDCB6E91A8430D300D7B982 /* Main.storyboard */; };
+		FBDCB6ED1A8430D300D7B982 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDCB6EC1A8430D300D7B982 /* Images.xcassets */; };
+		FBDCB6F01A8430D300D7B982 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDCB6EE1A8430D300D7B982 /* LaunchScreen.xib */; };
+		FBDCB6FC1A8430D300D7B982 /* EjercicioCuerposGeometricosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDCB6FB1A8430D300D7B982 /* EjercicioCuerposGeometricosTests.m */; };
+		FBDCB7081A84341400D7B982 /* cuerpos.gif in Resources */ = {isa = PBXBuildFile; fileRef = FBDCB7051A84341400D7B982 /* cuerpos.gif */; };
+		FBDCB7091A84341400D7B982 /* esfera.png in Resources */ = {isa = PBXBuildFile; fileRef = FBDCB7061A84341400D7B982 /* esfera.png */; };
+		FBDCB70A1A84341400D7B982 /* prisma.gif in Resources */ = {isa = PBXBuildFile; fileRef = FBDCB7071A84341400D7B982 /* prisma.gif */; };
+		FBDCB70D1A84382B00D7B982 /* ViewControllerInicio.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDCB70C1A84382B00D7B982 /* ViewControllerInicio.m */; };
+		FBDCB7101A84384100D7B982 /* ViewControllerEsfera.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDCB70F1A84384100D7B982 /* ViewControllerEsfera.m */; };
+		FBDCB7131A84384F00D7B982 /* ViewControllerPrisma.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDCB7121A84384F00D7B982 /* ViewControllerPrisma.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBDCB6F61A8430D300D7B982 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBDCB6D41A8430D300D7B982 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBDCB6DB1A8430D300D7B982;
+			remoteInfo = EjercicioCuerposGeometricos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FBDCB6DC1A8430D300D7B982 /* EjercicioCuerposGeometricos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EjercicioCuerposGeometricos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDCB6E01A8430D300D7B982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDCB6E11A8430D300D7B982 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBDCB6E31A8430D300D7B982 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBDCB6E41A8430D300D7B982 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBDCB6EA1A8430D300D7B982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBDCB6EC1A8430D300D7B982 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FBDCB6EF1A8430D300D7B982 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FBDCB6F51A8430D300D7B982 /* EjercicioCuerposGeometricosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EjercicioCuerposGeometricosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDCB6FA1A8430D300D7B982 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDCB6FB1A8430D300D7B982 /* EjercicioCuerposGeometricosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EjercicioCuerposGeometricosTests.m; sourceTree = "<group>"; };
+		FBDCB7051A84341400D7B982 /* cuerpos.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cuerpos.gif; sourceTree = "<group>"; };
+		FBDCB7061A84341400D7B982 /* esfera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esfera.png; sourceTree = "<group>"; };
+		FBDCB7071A84341400D7B982 /* prisma.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = prisma.gif; sourceTree = "<group>"; };
+		FBDCB70B1A84382B00D7B982 /* ViewControllerInicio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerInicio.h; sourceTree = "<group>"; };
+		FBDCB70C1A84382B00D7B982 /* ViewControllerInicio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerInicio.m; sourceTree = "<group>"; };
+		FBDCB70E1A84384100D7B982 /* ViewControllerEsfera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerEsfera.h; sourceTree = "<group>"; };
+		FBDCB70F1A84384100D7B982 /* ViewControllerEsfera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerEsfera.m; sourceTree = "<group>"; };
+		FBDCB7111A84384F00D7B982 /* ViewControllerPrisma.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerPrisma.h; sourceTree = "<group>"; };
+		FBDCB7121A84384F00D7B982 /* ViewControllerPrisma.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerPrisma.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBDCB6D91A8430D300D7B982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDCB6F21A8430D300D7B982 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBDCB6D31A8430D300D7B982 = {
+			isa = PBXGroup;
+			children = (
+				FBDCB6DE1A8430D300D7B982 /* EjercicioCuerposGeometricos */,
+				FBDCB6F81A8430D300D7B982 /* EjercicioCuerposGeometricosTests */,
+				FBDCB6DD1A8430D300D7B982 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBDCB6DD1A8430D300D7B982 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBDCB6DC1A8430D300D7B982 /* EjercicioCuerposGeometricos.app */,
+				FBDCB6F51A8430D300D7B982 /* EjercicioCuerposGeometricosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBDCB6DE1A8430D300D7B982 /* EjercicioCuerposGeometricos */ = {
+			isa = PBXGroup;
+			children = (
+				FBDCB6E31A8430D300D7B982 /* AppDelegate.h */,
+				FBDCB6E41A8430D300D7B982 /* AppDelegate.m */,
+				FBDCB6E91A8430D300D7B982 /* Main.storyboard */,
+				FBDCB70B1A84382B00D7B982 /* ViewControllerInicio.h */,
+				FBDCB70C1A84382B00D7B982 /* ViewControllerInicio.m */,
+				FBDCB70E1A84384100D7B982 /* ViewControllerEsfera.h */,
+				FBDCB70F1A84384100D7B982 /* ViewControllerEsfera.m */,
+				FBDCB7111A84384F00D7B982 /* ViewControllerPrisma.h */,
+				FBDCB7121A84384F00D7B982 /* ViewControllerPrisma.m */,
+				FBDCB6EC1A8430D300D7B982 /* Images.xcassets */,
+				FBDCB6EE1A8430D300D7B982 /* LaunchScreen.xib */,
+				FBDCB7051A84341400D7B982 /* cuerpos.gif */,
+				FBDCB7061A84341400D7B982 /* esfera.png */,
+				FBDCB7071A84341400D7B982 /* prisma.gif */,
+				FBDCB6DF1A8430D300D7B982 /* Supporting Files */,
+			);
+			path = EjercicioCuerposGeometricos;
+			sourceTree = "<group>";
+		};
+		FBDCB6DF1A8430D300D7B982 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBDCB6E01A8430D300D7B982 /* Info.plist */,
+				FBDCB6E11A8430D300D7B982 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBDCB6F81A8430D300D7B982 /* EjercicioCuerposGeometricosTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBDCB6FB1A8430D300D7B982 /* EjercicioCuerposGeometricosTests.m */,
+				FBDCB6F91A8430D300D7B982 /* Supporting Files */,
+			);
+			path = EjercicioCuerposGeometricosTests;
+			sourceTree = "<group>";
+		};
+		FBDCB6F91A8430D300D7B982 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBDCB6FA1A8430D300D7B982 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBDCB6DB1A8430D300D7B982 /* EjercicioCuerposGeometricos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDCB6FF1A8430D300D7B982 /* Build configuration list for PBXNativeTarget "EjercicioCuerposGeometricos" */;
+			buildPhases = (
+				FBDCB6D81A8430D300D7B982 /* Sources */,
+				FBDCB6D91A8430D300D7B982 /* Frameworks */,
+				FBDCB6DA1A8430D300D7B982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EjercicioCuerposGeometricos;
+			productName = EjercicioCuerposGeometricos;
+			productReference = FBDCB6DC1A8430D300D7B982 /* EjercicioCuerposGeometricos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBDCB6F41A8430D300D7B982 /* EjercicioCuerposGeometricosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDCB7021A8430D300D7B982 /* Build configuration list for PBXNativeTarget "EjercicioCuerposGeometricosTests" */;
+			buildPhases = (
+				FBDCB6F11A8430D300D7B982 /* Sources */,
+				FBDCB6F21A8430D300D7B982 /* Frameworks */,
+				FBDCB6F31A8430D300D7B982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBDCB6F71A8430D300D7B982 /* PBXTargetDependency */,
+			);
+			name = EjercicioCuerposGeometricosTests;
+			productName = EjercicioCuerposGeometricosTests;
+			productReference = FBDCB6F51A8430D300D7B982 /* EjercicioCuerposGeometricosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBDCB6D41A8430D300D7B982 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = ITESM;
+				TargetAttributes = {
+					FBDCB6DB1A8430D300D7B982 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					FBDCB6F41A8430D300D7B982 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = FBDCB6DB1A8430D300D7B982;
+					};
+				};
+			};
+			buildConfigurationList = FBDCB6D71A8430D300D7B982 /* Build configuration list for PBXProject "EjercicioCuerposGeometricos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBDCB6D31A8430D300D7B982;
+			productRefGroup = FBDCB6DD1A8430D300D7B982 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBDCB6DB1A8430D300D7B982 /* EjercicioCuerposGeometricos */,
+				FBDCB6F41A8430D300D7B982 /* EjercicioCuerposGeometricosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBDCB6DA1A8430D300D7B982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDCB7081A84341400D7B982 /* cuerpos.gif in Resources */,
+				FBDCB6EB1A8430D300D7B982 /* Main.storyboard in Resources */,
+				FBDCB70A1A84341400D7B982 /* prisma.gif in Resources */,
+				FBDCB6F01A8430D300D7B982 /* LaunchScreen.xib in Resources */,
+				FBDCB6ED1A8430D300D7B982 /* Images.xcassets in Resources */,
+				FBDCB7091A84341400D7B982 /* esfera.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDCB6F31A8430D300D7B982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBDCB6D81A8430D300D7B982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDCB7131A84384F00D7B982 /* ViewControllerPrisma.m in Sources */,
+				FBDCB6E51A8430D300D7B982 /* AppDelegate.m in Sources */,
+				FBDCB6E21A8430D300D7B982 /* main.m in Sources */,
+				FBDCB7101A84384100D7B982 /* ViewControllerEsfera.m in Sources */,
+				FBDCB70D1A84382B00D7B982 /* ViewControllerInicio.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBDCB6F11A8430D300D7B982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDCB6FC1A8430D300D7B982 /* EjercicioCuerposGeometricosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBDCB6F71A8430D300D7B982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBDCB6DB1A8430D300D7B982 /* EjercicioCuerposGeometricos */;
+			targetProxy = FBDCB6F61A8430D300D7B982 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FBDCB6E91A8430D300D7B982 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBDCB6EA1A8430D300D7B982 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FBDCB6EE1A8430D300D7B982 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FBDCB6EF1A8430D300D7B982 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FBDCB6FD1A8430D300D7B982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBDCB6FE1A8430D300D7B982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBDCB7001A8430D300D7B982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EjercicioCuerposGeometricos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBDCB7011A8430D300D7B982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EjercicioCuerposGeometricos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FBDCB7031A8430D300D7B982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EjercicioCuerposGeometricosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EjercicioCuerposGeometricos.app/EjercicioCuerposGeometricos";
+			};
+			name = Debug;
+		};
+		FBDCB7041A8430D300D7B982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = EjercicioCuerposGeometricosTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EjercicioCuerposGeometricos.app/EjercicioCuerposGeometricos";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBDCB6D71A8430D300D7B982 /* Build configuration list for PBXProject "EjercicioCuerposGeometricos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDCB6FD1A8430D300D7B982 /* Debug */,
+				FBDCB6FE1A8430D300D7B982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDCB6FF1A8430D300D7B982 /* Build configuration list for PBXNativeTarget "EjercicioCuerposGeometricos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDCB7001A8430D300D7B982 /* Debug */,
+				FBDCB7011A8430D300D7B982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FBDCB7021A8430D300D7B982 /* Build configuration list for PBXNativeTarget "EjercicioCuerposGeometricosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDCB7031A8430D300D7B982 /* Debug */,
+				FBDCB7041A8430D300D7B982 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBDCB6D41A8430D300D7B982 /* Project object */;
+}
