@@ -16,18 +16,19 @@
 
 // Test board
 @property (weak, nonatomic) IBOutlet UIView *lblTestBoard;
-@property (weak, nonatomic) IBOutlet UIButton *btnTest1;
-@property (weak, nonatomic) IBOutlet UIButton *btnTest2;
-@property (weak, nonatomic) IBOutlet UIButton *btnTest3;
-@property (weak, nonatomic) IBOutlet UIButton *btnTest4;
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *gameBtns;
 
-// Game board
+
+// Player board
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *btns;
 
 - (IBAction)changeSquare1:(UIButton *)sender;
 - (IBAction)changeSquare2:(UIButton *)sender;
 - (IBAction)changeSquare3:(UIButton *)sender;
 - (IBAction)changeSquare4:(UIButton *)sender;
+
+// Result board
+@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *resultBtns;
 
 // Button actions
 - (IBAction)checkGuess:(UIButton *)sender;
@@ -38,6 +39,8 @@
 @property int tryCounter;
 @property int correctColor;
 @property int correctColorAndPosition;
+@property NSMutableArray *playerColors;
+@property NSMutableArray *gameColors;
 @property NSMutableArray *colors;
 
 

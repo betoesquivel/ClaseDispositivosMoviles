@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
@@ -141,26 +141,76 @@
                                     <action selector="startGame:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4XC-JG-yae"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hhI-BA-Dvm">
+                                <rect key="frame" x="223" y="208" width="63" height="51"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KqL-Qw-6Cb">
+                                        <rect key="frame" x="4" y="3" width="24" height="20"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeSquare4:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dxf-yJ-LkH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWA-hy-VFq">
+                                        <rect key="frame" x="34" y="3" width="24" height="20"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeSquare4:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xfK-pd-0t7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Hd-A2-gFE">
+                                        <rect key="frame" x="34" y="26" width="24" height="20"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeSquare4:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="YKG-Tm-A9K"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hTB-b1-CXu">
+                                        <rect key="frame" x="4" y="26" width="24" height="20"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="changeSquare4:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fNr-iW-yeQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="btnTest1" destination="odR-5X-1Zk" id="z1i-0A-gG4"/>
-                        <outlet property="btnTest2" destination="hcq-ip-hux" id="MpX-Xf-RCI"/>
-                        <outlet property="btnTest3" destination="7zv-vX-Ykz" id="RdX-Ym-a9U"/>
-                        <outlet property="btnTest4" destination="YdQ-jY-tM6" id="hD0-Pl-Ejj"/>
                         <outlet property="lblTestBoard" destination="he4-yr-Xow" id="f4u-UI-fwD"/>
                         <outlet property="segment" destination="mcY-Y3-0aB" id="esy-V7-MZS"/>
                         <outletCollection property="btns" destination="D4A-Er-t7u" id="HRX-XS-hTb"/>
                         <outletCollection property="btns" destination="e5w-JL-vVv" id="cyO-xF-0Qa"/>
                         <outletCollection property="btns" destination="FlM-LI-FwX" id="k7I-hy-hKs"/>
                         <outletCollection property="btns" destination="LXV-jK-SyB" id="ebI-61-4z5"/>
+                        <outletCollection property="gameBtns" destination="odR-5X-1Zk" id="ZQU-6h-ide"/>
+                        <outletCollection property="gameBtns" destination="hcq-ip-hux" id="0ij-jS-aRo"/>
+                        <outletCollection property="gameBtns" destination="7zv-vX-Ykz" id="rMc-x1-U3z"/>
+                        <outletCollection property="gameBtns" destination="YdQ-jY-tM6" id="yWA-jH-ux8"/>
+                        <outletCollection property="resultBtns" destination="KqL-Qw-6Cb" id="wA7-k6-5lQ"/>
+                        <outletCollection property="resultBtns" destination="gWA-hy-VFq" id="4Ge-Hd-gaa"/>
+                        <outletCollection property="resultBtns" destination="hTB-b1-CXu" id="EZz-AJ-csz"/>
+                        <outletCollection property="resultBtns" destination="2Hd-A2-gFE" id="8er-i7-Uy2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="439.5" y="428.5"/>
+            <point key="canvasLocation" x="439" y="428"/>
         </scene>
     </scenes>
 </document>
