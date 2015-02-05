@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FB23A2591A7AEFAE0032D1E9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23A2581A7AEFAE0032D1E9 /* main.m */; };
 		FB23A25C1A7AEFAE0032D1E9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23A25B1A7AEFAE0032D1E9 /* AppDelegate.m */; };
-		FB23A25F1A7AEFAE0032D1E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB23A25E1A7AEFAE0032D1E9 /* ViewController.m */; };
 		FB23A2621A7AEFAE0032D1E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB23A2601A7AEFAE0032D1E9 /* Main.storyboard */; };
 		FB23A2641A7AEFAE0032D1E9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB23A2631A7AEFAE0032D1E9 /* Images.xcassets */; };
 		FB23A2671A7AEFAE0032D1E9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB23A2651A7AEFAE0032D1E9 /* LaunchScreen.xib */; };
@@ -37,8 +36,6 @@
 		FB23A2581A7AEFAE0032D1E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB23A25A1A7AEFAE0032D1E9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FB23A25B1A7AEFAE0032D1E9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FB23A25D1A7AEFAE0032D1E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FB23A25E1A7AEFAE0032D1E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		FB23A2611A7AEFAE0032D1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB23A2631A7AEFAE0032D1E9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		FB23A2661A7AEFAE0032D1E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -98,10 +95,8 @@
 				FB23A2821A7AF5D80032D1E9 /* mickey.png */,
 				FB23A25B1A7AEFAE0032D1E9 /* AppDelegate.m */,
 				FB23A2841A7AF5F20032D1E9 /* mickey.jpg */,
-				FB23A25D1A7AEFAE0032D1E9 /* ViewController.h */,
 				FB23A2861A7AF61A0032D1E9 /* ViewControllerInformacion.h */,
 				FB23A2871A7AF61A0032D1E9 /* ViewControllerInformacion.m */,
-				FB23A25E1A7AEFAE0032D1E9 /* ViewController.m */,
 				FB23A2601A7AEFAE0032D1E9 /* Main.storyboard */,
 				FB23A2891A7AF65E0032D1E9 /* ViewControllerEditar.h */,
 				FB23A28A1A7AF65E0032D1E9 /* ViewControllerEditar.m */,
@@ -243,7 +238,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB23A2881A7AF61A0032D1E9 /* ViewControllerInformacion.m in Sources */,
-				FB23A25F1A7AEFAE0032D1E9 /* ViewController.m in Sources */,
 				FB23A25C1A7AEFAE0032D1E9 /* AppDelegate.m in Sources */,
 				FB23A28B1A7AF65E0032D1E9 /* ViewControllerEditar.m in Sources */,
 				FB23A27F1A7AF53C0032D1E9 /* ViewControllerInicial.m in Sources */,
@@ -440,6 +434,7 @@
 				FB23A2781A7AEFAE0032D1E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FB23A2791A7AEFAE0032D1E9 /* Build configuration list for PBXNativeTarget "storyboardsTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +443,7 @@
 				FB23A27B1A7AEFAE0032D1E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

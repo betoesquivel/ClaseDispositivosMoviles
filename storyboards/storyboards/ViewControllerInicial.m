@@ -34,6 +34,8 @@
 - (IBAction)unwindEditar: (UIStoryboardSegue *) segue
 {
     // falta completar
+    self.tfNombre.text = self.nombre;
+    self.tfEmail.text = self.email;
 }
 
 

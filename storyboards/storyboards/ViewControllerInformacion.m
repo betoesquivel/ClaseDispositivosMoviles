@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.imgFoto.image = self.foto;
+    self.tfAncho.text = [NSString stringWithFormat:@"%0.0f",self.ancho ];
+    self.tfAltura.text = [NSString stringWithFormat:@"%0.0f",self.altura ];
 }
 
 - (void)didReceiveMemoryWarning {
