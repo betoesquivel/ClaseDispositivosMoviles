@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *oLargo;
 @property (weak, nonatomic) IBOutlet UITextField *oAncho;
 @property (weak, nonatomic) IBOutlet UITextField *oAltura;
+@property (weak, nonatomic) IBOutlet UIButton *obGuardar;
 
 @end

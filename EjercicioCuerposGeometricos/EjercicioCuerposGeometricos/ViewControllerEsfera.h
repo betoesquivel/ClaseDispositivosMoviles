@@ -11,5 +11,6 @@
 @interface ViewControllerEsfera : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *oImagen;
 @property (weak, nonatomic) IBOutlet UITextField *oRadio;
+@property (weak, nonatomic) IBOutlet UIButton *obGuardar;
 
 @end

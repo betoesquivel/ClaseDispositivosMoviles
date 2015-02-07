@@ -13,4 +13,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *oResultado;
 @property (weak, nonatomic) IBOutlet UITextField *oVolumen;
 
+@property NSString *resultado;
+@property (strong, nonatomic) UIImage *imagen;
+@property CGFloat volumen;
+@property BOOL hideScreen; 
 @end
