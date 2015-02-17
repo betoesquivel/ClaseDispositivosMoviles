@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "Actividad.h"
+#import "MasterViewController.h"
 @interface DetailViewController : UIViewController
 
+@property (weak, nonatomic) MasterViewController *master;
 @property (strong, nonatomic) Actividad *detailItem;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UITextField *oName;

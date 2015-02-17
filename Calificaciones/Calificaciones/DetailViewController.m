@@ -38,6 +38,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setTitle:@"Calificar"];
     // Do any additional setup after loading the view, typically from a nib.
         [self configureView];
 }
@@ -52,6 +53,7 @@
         
         CalificaViewController *controller = (CalificaViewController *)[segue destinationViewController];
         [controller setActivity:_detailItem];
+        [controller setDelegado:_master];
         
     }
 }

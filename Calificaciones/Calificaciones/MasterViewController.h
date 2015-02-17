@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CalificaViewController.h"
 
 @class DetailViewController;
 
-@interface MasterViewController : UITableViewController
+@interface MasterViewController : UITableViewController <ProtocoloEditarCalificacion>
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
 

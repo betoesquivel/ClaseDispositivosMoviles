@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setTitle:@"Califica"];
     // Do any additional setup after loading the view.
     _oName.text = _activity.name;
     _oGrade.text = [[NSString alloc] initWithFormat:@"%ld", (long)_activity.grade ];
@@ -33,6 +34,8 @@
     _activity.comments = _oComments.text;
     
     // usar el apuntador al master, para actualizar la vista.
+    [self.delegado editaCalificacion:_activity];
+    [self.delegado quitaVista];
 }
 
 /*

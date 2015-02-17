@@ -9,10 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "Actividad.h"
 
+@protocol ProtocoloEditarCalificacion <NSObject>
+
+- (void) editaCalificacion:(Actividad*) act;
+- (void) quitaVista;
+
+@end
+
 @interface CalificaViewController : UIViewController
+
 @property (strong, nonatomic) Actividad *activity;
 @property (weak, nonatomic) IBOutlet UITextField *oName;
 @property (weak, nonatomic) IBOutlet UITextField *oGrade;
 @property (weak, nonatomic) IBOutlet UITextView *oComments;
+
+@property (strong, nonatomic) id <ProtocoloEditarCalificacion> delegado;
 
 @end

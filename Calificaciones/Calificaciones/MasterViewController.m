@@ -13,6 +13,7 @@
 @interface MasterViewController ()
 
 @property NSMutableArray *activities;
+@property NSInteger indice;
 @end
 
 @implementation MasterViewController
@@ -27,6 +28,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setTitle:@"Alumnos"];
     Actividad *act1 = [[Actividad alloc] initWithName:@"Beto" grade:100 comments:@"Perfect HW :P."];
     Actividad *act2 = [[Actividad alloc] initWithName:@"Chelo" grade:90 comments:@"Ok, job."];
     Actividad *act3 = [[Actividad alloc] initWithName:@"Miriam" grade:100 comments:@"Impressive."];
@@ -52,9 +54,11 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        _indice = indexPath.row;
         Actividad *object = self.activities[indexPath.row];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
         [controller setDetailItem:object];
+        [controller setMaster: self];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
     }
@@ -91,6 +95,16 @@
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
+}
+
+- (void)editaCalificacion:(Actividad *)act {
+    
+    [_activities replaceObjectAtIndex:_indice withObject:act];
+    [self.tableView reloadData];
+}
+
+- (void)quitaVista {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
 
 @end
