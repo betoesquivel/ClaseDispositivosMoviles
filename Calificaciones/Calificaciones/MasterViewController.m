@@ -1,18 +1,18 @@
 //
 //  MasterViewController.m
-//  ListaDeContactos
+//  Calificaciones
 //
-//  Created by José Alberto Esquivel on 2/12/15.
+//  Created by José Alberto Esquivel on 2/16/15.
 //  Copyright (c) 2015 José Alberto Esquivel. All rights reserved.
 //
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
-#import "Contacto.h"
+#import "Actividad.h"
 
 @interface MasterViewController ()
 
-@property NSMutableArray *listaContactos;
+@property NSMutableArray *activities;
 @end
 
 @implementation MasterViewController
@@ -27,16 +27,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    Actividad *act1 = [[Actividad alloc] initWithName:@"Beto" grade:100 comments:@"Perfect HW :P."];
+    Actividad *act2 = [[Actividad alloc] initWithName:@"Chelo" grade:90 comments:@"Ok, job."];
+    Actividad *act3 = [[Actividad alloc] initWithName:@"Miriam" grade:100 comments:@"Impressive."];
     
-
-    // crear contactos
-    Contacto *cont1 = [[Contacto alloc] initWithNombre:@"Juan" oficina:@"Aulas 2-222" telefono:6457];
-    Contacto *cont2 = [[Contacto alloc] initWithNombre:@"Rosy" oficina:@"Aulas 7-401" telefono:6482];
-    
-    _listaContactos = [[NSMutableArray alloc] initWithObjects: cont1, cont2, nil];
-    
-    
+    _activities = [[NSMutableArray alloc] initWithObjects: act1, act2, act3, nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,10 +40,9 @@
 }
 
 - (void)insertNewObject:(id)sender {
-    if (!self.listaContactos) {
-        self.listaContactos = [[NSMutableArray alloc] init];
+    if (!self.activities) {
+        self.activities = [[NSMutableArray alloc] init];
     }
-//    [self.listaContactos insertObject:[Contacto date] atIndex:0];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
@@ -58,14 +52,11 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([[segue identifier] isEqualToString:@"showDetail"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        Contacto *object = self.listaContactos[indexPath.row];
+        Actividad *object = self.activities[indexPath.row];
         DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
         [controller setDetailItem:object];
         controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
         controller.navigationItem.leftItemsSupplementBackButton = YES;
-    }else if ([[segue identifier] isEqualToString:@"agrega"]){
-        NSLog(@"Segueing into ViewControllerAgregar.h");
-        [[segue destinationViewController] setDelegado: self];
     }
 }
 
@@ -76,14 +67,15 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.listaContactos.count;
+    return self.activities.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
 
-    Contacto *object = self.listaContactos[indexPath.row];
-    cell.textLabel.text = [object nombre];
+    Actividad *object = self.activities[indexPath.row];
+    cell.textLabel.text = [object name];
+    cell.detailTextLabel.text = [[NSString alloc] initWithFormat:@"%ld", (long)object.grade];
     return cell;
 }
 
@@ -94,21 +86,11 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        [self.listaContactos removeObjectAtIndex:indexPath.row];
+        [self.activities removeObjectAtIndex:indexPath.row];
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
     }
-}
-
-- (void)agregaContacto:(NSString *)nombre withOfic:(NSString *)ofic withTel:(NSInteger)tel {
-    Contacto *tmp = [[Contacto alloc] initWithNombre:nombre oficina:ofic telefono:tel];
-    [_listaContactos addObject:tmp];
-    [self.tableView reloadData];
-}
-
-- (void)quitaVista {
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 @end
