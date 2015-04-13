@@ -64,6 +64,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="oView" destination="sUO-d1-mtH" id="oev-pE-Bmv"/>
                         <outletCollection property="oSwitches" destination="YWc-ay-XAU" id="Q1r-hj-Eel"/>
                         <outletCollection property="oSwitches" destination="43h-Wb-3Yg" id="CF3-Ys-gVN"/>
                         <outletCollection property="oSwitches" destination="Fg3-Uo-nV2" id="WD0-ZC-g7v"/>

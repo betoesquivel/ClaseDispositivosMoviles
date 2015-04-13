@@ -10,6 +10,11 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *oNombre;
+@property (weak, nonatomic) IBOutlet UILabel *oSonido;
+@property (weak, nonatomic) IBOutlet UILabel *oExperiencia;
+@property (weak, nonatomic) IBOutlet UILabel *oVolumen;
+
 
 @end
 

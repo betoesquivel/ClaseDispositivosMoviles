@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults boolForKey:@"sonido"]){
+        _oSwitch.on = YES;
+    }else {
+        _oSwitch.on = NO;
+    }
+    _oSlider.value = [defaults floatForKey:@"volumen"];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +31,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void) viewWillDisappear: (BOOL) animated {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setBool: self.oSwitch.on forKey:@"sonido"];
+    [defaults setFloat: self.oSlider.value forKey:@"volumen"];
+}
 /*
 #pragma mark - Navigation
 

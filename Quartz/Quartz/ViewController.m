@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "MiView.h"
 @interface ViewController ()
 
 @end
@@ -22,6 +22,12 @@
     _TRIANGLE = 0;
     _RECTANGLE = 1;
     _CIRCLE = 2;
+    ((UISwitch *)_oSwitches[_TRIANGLE]).on = YES;
+    ((UISwitch *)_oSwitches[_RECTANGLE]).on = YES;
+    ((UISwitch *)_oSwitches[_CIRCLE]).on = YES;
+    _oView.triangleActivated = YES;
+    _oView.rectangleActivated = YES;
+    _oView.circleActivated = YES;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,8 +37,14 @@
 
 - (IBAction)switchChanged:(id)sender {
     
-    
-    
+    if (_oSwitches[_TRIANGLE] == sender){
+        _oView.triangleActivated = (_oView.triangleActivated) ? NO:YES;
+    }else if (_oSwitches[_RECTANGLE] == sender){
+        _oView.rectangleActivated = (_oView.rectangleActivated) ? NO:YES;
+    }else if (_oSwitches[_CIRCLE] == sender){
+        _oView.circleActivated = (_oView.circleActivated) ? NO:YES;
+    }
+    [_oView setNeedsDisplay];
 }
 
 @end

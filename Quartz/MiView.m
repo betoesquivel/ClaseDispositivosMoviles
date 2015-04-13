@@ -20,55 +20,65 @@
     CGContextSetLineWidth(context, 3.0);
     CGContextSetStrokeColorWithColor(context, [UIColor whiteColor].CGColor);
     CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor );
-    
-    // Triangle
-    CGLayerRef triangleLayer = CGLayerCreateWithContext(context,	self.frame.size,NULL);
-    CGContextRef triangleContext	=	CGLayerGetContext(triangleLayer);
-    CGContextSetLineWidth(context, 3.0);
-    CGContextSetStrokeColorWithColor(context, [UIColor purpleColor].CGColor);
-    CGContextSetFillColorWithColor(context, [UIColor purpleColor].CGColor );
-    
-    // Painting the triangle
-    CGContextMoveToPoint(triangleContext, 50,200);
-    CGContextAddLineToPoint(triangleContext, 150, 400);
-    CGContextAddLineToPoint(triangleContext, 0, 400);
-    CGContextAddLineToPoint(triangleContext, 50, 200);
-    CGContextClosePath(triangleContext);
-    CGContextFillPath(triangleContext);
-    
-    CGContextDrawLayerInRect(context, self.frame, triangleLayer);
-    
-    
-    // Rectangle
-    CGLayerRef rectangleLayer = CGLayerCreateWithContext(context,	self.frame.size,NULL);
-    CGContextRef rectangleContext	=	CGLayerGetContext(rectangleLayer);
-    CGContextSetLineWidth(context, 3.0);
-    CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
-    CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor );
-    
-    // Painting the rectangle
-    CGRect myRect	= CGRectMake(0,100,100,100);
-    CGContextStrokeRect	(rectangleContext,	myRect);
-    CGContextFillRect	(rectangleContext,	myRect);
-    
-    CGContextDrawLayerInRect(context, self.frame, rectangleLayer);
-    
-    
-    
+    if (_circleActivated) {
     // Circle
-    CGLayerRef circleLayer = CGLayerCreateWithContext(context,	self.frame.size,NULL);
-    CGContextRef circleContext	=	CGLayerGetContext(circleLayer);
-    CGContextSetLineWidth(context, 3.0);
-    CGContextSetStrokeColorWithColor(context, [UIColor yellowColor].CGColor);
-    CGContextSetFillColorWithColor(context, [UIColor yellowColor].CGColor );
+        CGLayerRef circleLayer = CGLayerCreateWithContext(context,	self.frame.size,NULL);
+        CGContextRef circleContext	=	CGLayerGetContext(circleLayer);
+        CGContextSetLineWidth(circleContext, 3.0);
+        CGContextSetStrokeColorWithColor(circleContext, [UIColor whiteColor].CGColor);
+        CGContextSetFillColorWithColor(circleContext, [UIColor yellowColor].CGColor );
+        
+        // Painting the circle
+        CGRect circleRect	=	CGRectMake(5,0,100,100);
+        CGContextFillEllipseInRect(circleContext,	circleRect);
+        CGContextStrokeEllipseInRect(circleContext,	circleRect);
+        
+        CGContextDrawLayerInRect(context, self.frame, circleLayer);
+    }
+
+    if (_rectangleActivated){
+        // Rectangle
+        CGLayerRef rectangleLayer = CGLayerCreateWithContext(context,	self.frame.size,NULL);
+        CGContextRef rectangleContext	=	CGLayerGetContext(rectangleLayer);
+        CGContextSetLineWidth(rectangleContext, 3.0);
+        CGContextSetStrokeColorWithColor(rectangleContext, [UIColor whiteColor].CGColor);
+        CGContextSetFillColorWithColor(rectangleContext, [UIColor redColor].CGColor );
+        
+        // Painting the rectangle
+        CGRect myRect	= CGRectMake(5,100,100,100);
+        CGContextStrokeRect	(rectangleContext,	myRect);
+        CGContextFillRect	(rectangleContext,	myRect);
+        
+        CGContextDrawLayerInRect(context, self.frame, rectangleLayer);
+        
+    }
     
-    // Painting the circle
-    CGRect circleRect	=	CGRectMake(0,0,100,100);
-    CGContextFillEllipseInRect(context,	circleRect);
-    CGContextStrokeEllipseInRect(context,	circleRect);
-    
-    CGContextDrawLayerInRect(context, self.frame, circleLayer);
-    
+    if (_triangleActivated) {
+        // Triangle
+        CGLayerRef triangleLayer = CGLayerCreateWithContext(context,	self.frame.size,NULL);
+        CGContextRef triangleContext	=	CGLayerGetContext(triangleLayer);
+        CGContextSetLineWidth(triangleContext, 3.0);
+        CGContextSetStrokeColorWithColor(triangleContext, [UIColor whiteColor].CGColor);
+        CGContextSetFillColorWithColor(triangleContext, [UIColor purpleColor].CGColor );
+
+        // Painting the triangle
+        CGContextMoveToPoint(triangleContext, 50,200);
+        CGContextAddLineToPoint(triangleContext, 150, 400);
+        CGContextAddLineToPoint(triangleContext, 5, 400);
+        CGContextAddLineToPoint(triangleContext, 50, 200);
+        CGContextClosePath(triangleContext);
+        CGContextFillPath(triangleContext);
+        
+        CGContextMoveToPoint(triangleContext, 50,200);
+        CGContextAddLineToPoint(triangleContext, 150, 400);
+        CGContextAddLineToPoint(triangleContext, 5, 400);
+        CGContextAddLineToPoint(triangleContext, 50, 200);
+        CGContextClosePath(triangleContext);
+        CGContextStrokePath(triangleContext);
+        
+        CGContextDrawLayerInRect(context, self.frame, triangleLayer);
+        
+    }
     
     
 }

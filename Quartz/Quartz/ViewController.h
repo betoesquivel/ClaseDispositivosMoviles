@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MiView.h"
 @interface ViewController : UIViewController
 
 @property (strong, nonatomic) IBOutletCollection(UISwitch) NSArray *oSwitches;
 @property NSInteger TRIANGLE;
 @property NSInteger RECTANGLE;
 @property NSInteger CIRCLE;
+@property (weak, nonatomic) IBOutlet MiView *oView;
 
 @end
 

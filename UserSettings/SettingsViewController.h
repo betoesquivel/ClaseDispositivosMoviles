@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SettingsViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UISwitch *oSwitch;
+@property (weak, nonatomic) IBOutlet UISlider *oSlider;
 
 @end

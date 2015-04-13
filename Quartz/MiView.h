@@ -10,4 +10,8 @@
 
 @interface MiView : UIView
 
+@property BOOL triangleActivated;
+@property BOOL rectangleActivated;
+@property BOOL circleActivated;
+
 @end

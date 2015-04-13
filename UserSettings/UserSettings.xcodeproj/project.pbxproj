@@ -14,6 +14,8 @@
 		354DF89D1AC0D1B5003D3ED7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354DF89C1AC0D1B5003D3ED7 /* Images.xcassets */; };
 		354DF8A01AC0D1B5003D3ED7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 354DF89E1AC0D1B5003D3ED7 /* LaunchScreen.xib */; };
 		354DF8AC1AC0D1B5003D3ED7 /* UserSettingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 354DF8AB1AC0D1B5003D3ED7 /* UserSettingsTests.m */; };
+		354DF8B61AC0D1CE003D3ED7 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 354DF8B51AC0D1CE003D3ED7 /* Settings.bundle */; };
+		354DF8B91AC0DA47003D3ED7 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 354DF8B81AC0DA47003D3ED7 /* SettingsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		354DF8A51AC0D1B5003D3ED7 /* UserSettingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UserSettingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		354DF8AA1AC0D1B5003D3ED7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		354DF8AB1AC0D1B5003D3ED7 /* UserSettingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSettingsTests.m; sourceTree = "<group>"; };
+		354DF8B51AC0D1CE003D3ED7 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		354DF8B71AC0DA47003D3ED7 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsViewController.h; path = ../SettingsViewController.h; sourceTree = "<group>"; };
+		354DF8B81AC0DA47003D3ED7 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsViewController.m; path = ../SettingsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 		354DF8831AC0D1B5003D3ED7 = {
 			isa = PBXGroup;
 			children = (
+				354DF8B51AC0D1CE003D3ED7 /* Settings.bundle */,
 				354DF88E1AC0D1B5003D3ED7 /* UserSettings */,
 				354DF8A81AC0D1B5003D3ED7 /* UserSettingsTests */,
 				354DF88D1AC0D1B5003D3ED7 /* Products */,
@@ -81,6 +87,8 @@
 		354DF88E1AC0D1B5003D3ED7 /* UserSettings */ = {
 			isa = PBXGroup;
 			children = (
+				354DF8B71AC0DA47003D3ED7 /* SettingsViewController.h */,
+				354DF8B81AC0DA47003D3ED7 /* SettingsViewController.m */,
 				354DF8931AC0D1B5003D3ED7 /* AppDelegate.h */,
 				354DF8941AC0D1B5003D3ED7 /* AppDelegate.m */,
 				354DF8961AC0D1B5003D3ED7 /* ViewController.h */,
@@ -199,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354DF8B61AC0D1CE003D3ED7 /* Settings.bundle in Resources */,
 				354DF89B1AC0D1B5003D3ED7 /* Main.storyboard in Resources */,
 				354DF8A01AC0D1B5003D3ED7 /* LaunchScreen.xib in Resources */,
 				354DF89D1AC0D1B5003D3ED7 /* Images.xcassets in Resources */,
@@ -222,6 +231,7 @@
 				354DF8981AC0D1B5003D3ED7 /* ViewController.m in Sources */,
 				354DF8951AC0D1B5003D3ED7 /* AppDelegate.m in Sources */,
 				354DF8921AC0D1B5003D3ED7 /* main.m in Sources */,
+				354DF8B91AC0DA47003D3ED7 /* SettingsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

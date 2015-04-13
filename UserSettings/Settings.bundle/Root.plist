@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>Title</key>
-			<string>Group</string>
+			<string>Titulo del Settings</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -20,11 +20,11 @@
 			<key>IsSecure</key>
 			<false/>
 			<key>Key</key>
-			<string>name_preference</string>
+			<string>nombreUsuario</string>
 			<key>KeyboardType</key>
 			<string>Alphabet</string>
 			<key>Title</key>
-			<string>Name</string>
+			<string>Nombre</string>
 			<key>Type</key>
 			<string>PSTextFieldSpecifier</string>
 		</dict>
@@ -32,9 +32,9 @@
 			<key>DefaultValue</key>
 			<true/>
 			<key>Key</key>
-			<string>enabled_preference</string>
+			<string>sonido</string>
 			<key>Title</key>
-			<string>Enabled</string>
+			<string>Sonido</string>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 		</dict>
@@ -42,7 +42,7 @@
 			<key>DefaultValue</key>
 			<real>0.5</real>
 			<key>Key</key>
-			<string>slider_preference</string>
+			<string>volumen</string>
 			<key>MaximumValue</key>
 			<integer>1</integer>
 			<key>MaximumValueImage</key>
@@ -53,6 +53,26 @@
 			<string></string>
 			<key>Type</key>
 			<string>PSSliderSpecifier</string>
+		</dict>
+		<dict>
+			<key>Values</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+				<string>3</string>
+			</array>
+			<key>Type</key>
+			<string>PSMultiValueSpecifier</string>
+			<key>Titles</key>
+			<array>
+				<string>Principiante</string>
+				<string>Intermedio</string>
+				<string>Avanzado</string>
+			</array>
+			<key>Key</key>
+			<string>experiencia</string>
+			<key>DefaultValue</key>
+			<string></string>
 		</dict>
 	</array>
 	<key>StringsTable</key>

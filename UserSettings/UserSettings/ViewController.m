@@ -17,6 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+}
+- (void) actualizaSettings {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    
+    self.oNombre.text = [defaults objectForKey:@"nombreUsuario"];
+    NSLog(_oNombre.text);
+    self.oSonido.text = [[defaults objectForKey:@"sonido"] stringValue];
+        NSLog(_oSonido.text);
+    self.oExperiencia.text = [defaults objectForKey:@"experiencia"];
+        NSLog(_oExperiencia.text);
+    self.oVolumen.text = [[defaults objectForKey:@"volumen"] stringValue];
+    NSLog(_oVolumen.text);
+
+    
+}
+- (void) viewDidAppear:(BOOL) animated {
+    [self actualizaSettings];
+    [super viewDidAppear:YES];
 }
 
 - (void)didReceiveMemoryWarning {
