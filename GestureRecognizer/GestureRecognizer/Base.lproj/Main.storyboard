@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mickey.png" translatesAutoresizingMaskIntoConstraints="NO" id="gog-qa-Ahh">
+                                <rect key="frame" x="98" y="156" width="178" height="249"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="BSD-Gv-qVJ" appends="YES" id="8Mx-1s-4bb"/>
+                                    <outletCollection property="gestureRecognizers" destination="gt5-iN-tVk" appends="YES" id="qCC-e6-fwj"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.40000000596046448" green="0.80000001192092896" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="b2O-s6-AJ5" appends="YES" id="X1w-sG-LxX"/>
+                        </connections>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="oImage" destination="gog-qa-Ahh" id="wOG-hd-w5f"/>
+                        <outlet property="oSingleTap" destination="b2O-s6-AJ5" id="h77-kU-pfa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="BSD-Gv-qVJ">
+                    <connections>
+                        <action selector="handlePanGesture:" destination="vXZ-lx-hvc" id="CkI-6W-6Ag"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="gt5-iN-tVk">
+                    <connections>
+                        <action selector="handlePinchGesture:" destination="vXZ-lx-hvc" id="1Fz-J2-3ul"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <tapGestureRecognizer id="b2O-s6-AJ5">
+                    <connections>
+                        <action selector="handleSingleTap:" destination="vXZ-lx-hvc" id="5tF-iY-Bri"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="219.5" y="355.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mickey.png" width="256" height="256"/>
+    </resources>
+</document>
